@@ -1,0 +1,29 @@
+<a
+  class="w-full block text-center bg-gray-100 text-blu sr-only focus:not-sr-only"
+  href="#main-content"
+  >Skip to content</a
+>
+<header role="banner" class="pb-32">
+  <div class="max-w-7xl mx-auto px-5 pt-8 pb-11">
+    <a href="/">
+      <p class="font-serif lg:text-6xl text-4xl font-black lg:pb-16 pb-10">
+        r.
+      </p>
+    </a>
+
+    <nav aria-label="primary" class="">
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+        listElement: "ul",
+        listItemElement: "li",
+        listClass: "flex gap-4",
+        listItemClass: "relative after:absolute after:top-full after:left-0 after:w-full after:h-0.5 after:bg-transparent hover:after:bg-blue-600 after:transition",
+        listItemHasChildrenClass: "",
+        activeListItemClass: "",
+        anchorClass: "uppercase text-xl text-gray-800 transition",
+        activeAnchorClass: "font-bold",
+        activeKey: eleventyNavigation.key,
+        showExcerpt: false
+      }) | safe }}
+    </nav>
+  </div>
+</header>
