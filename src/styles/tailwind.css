@@ -1,6 +1,190 @@
-@tailwind base;
 @tailwind components;
-@tailwind utilities;
 
+@tailwind utilities;
 @layer utilities {
+}
+
+@tailwind base;
+@layer base {
+  h2 {
+    @apply md:text-4xl text-3xl font-semibold;
+  }
+  h3 {
+    @apply md:text-3xl text-2xl font-bold mb-2 mt-10;
+  }
+  h4 {
+    @apply md:text-2xl text-xl font-semibold mb-1 mt-8;
+  }
+  p {
+    @apply text-lg;
+  }
+  a.link {
+    @apply relative before:bg-pink-400 before:absolute before:left-0 before:bottom-[1px] before:w-full before:h-0.5 before:-z-10 before:transition-all hover:before:bottom-0 hover:before:h-full;
+  }
+  blockquote {
+    @apply pl-8 mt-7 text-2xl text-gray-500 font-light;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  ol > li {
+    @apply mt-6 ml-7;
+  }
+}
+
+:root {
+  --bl-text-color: #222;
+  --bl-background-color: #fff;
+  --bl-accent-color: #00ae86;
+  --bl-shadow-color: #444;
+}
+
+/* Work */
+.work img {
+  width: 100%;
+}
+
+/* BASIC BLOCK STYLES */
+.bl {
+  display: block;
+  border: 3px solid var(--bl-text-color);
+  border-radius: 3px;
+  background: var(--bl-background-color);
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  top: -2px;
+  left: -2px;
+  transition: transform 0.2s;
+  margin: 8px 6px 10px 6px;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.bl.wrapper,
+.bl.wrapper.inline {
+  display: inline-block;
+  padding: 0;
+}
+
+.bl.wrapper > * {
+  margin: 0;
+}
+
+/* INTERACTIVE BLOCK STYLES */
+.bl::before {
+  content: "";
+  background: var(--bl-background-color);
+  border: 3px solid var(--bl-text-color);
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  z-index: -1;
+}
+
+.bl:hover,
+.bl:focus {
+  transform: translate(2px, 2px);
+}
+
+.bl::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: var(--bl-shadow-color);
+  border: 3px solid var(--bl-text-color);
+  border-radius: 3px;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 0;
+  z-index: -2;
+  transition: transform 0.2s;
+}
+
+.bl:hover::after,
+.bl:focus::after {
+  transform: translate(-2px, -3px);
+}
+
+.bl:active {
+  color: var(--bl-text-color);
+  transform: translate(3px, 3px);
+}
+
+.bl:active::after {
+  transform: translate(-4px, -4px);
+}
+
+.bl:focus {
+  outline: none;
+}
+
+.bl.fixed {
+  cursor: initial !important;
+}
+
+/* FIXED STYLES */
+.bl.fixed:hover,
+.bl.fixed:hover::before,
+.bl.fixed:hover::after,
+.bl.fixed:active,
+.bl.fixed:active::before,
+.bl.fixed:active::after,
+.bl.fixed:focus,
+.bl.fixed:focus::before,
+.bl.fixed:focus::after {
+  transform: none !important;
+}
+
+/* ACCENT STYLES */
+.bl.accent {
+  color: var(--bl-background-color);
+  background: var(--bl-accent-color);
+}
+
+.bl.accent::before {
+  background: var(--bl-accent-color);
+}
+
+/* INLINE STYLES */
+.bl.inline {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0 6px;
+  margin: 3px 2px 1px 4px;
+}
+.bl.inline::after {
+  top: -1px;
+  left: -1px;
+}
+.bl.inline:hover,
+.bl.inline:focus {
+  transform: translate(1px, 1px);
+}
+.bl.inline:hover::after,
+.bl.inline:focus::after {
+  transform: translate(-1px, -1px);
+}
+.bl.inline:active {
+  transform: translate(2px, 2px);
+}
+
+/* ROUND STYLES */
+.bl.round,
+.bl.round::before,
+.bl.round::after {
+  border-radius: 30px;
+}
+
+.bl.round::after {
+  left: 1px;
 }

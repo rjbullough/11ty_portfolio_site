@@ -1,0 +1,34 @@
+<section id="works" class="pb-24 md:pb-32">
+  <div class="px-5 max-w-screen-xl lg:mx-auto">
+    <div class="py-10 grid gap-x-2 gap-y-5 sm:gap-y-2 grid-cols-1 md:grid-cols-3 md:grid-flow-row-dense">
+      <div class="md:col-span-3">
+        <span class="block text-xl tracking-tight text-gray-700 dark:text-gray-300 mb-10 md:w-2/3">
+        {{ data.featuredWorkDescription }}
+        </span>
+      </div>
+
+      {% for item in collections.works | reverse%}
+        {% if item.data.featured %}
+          <a
+          href="{{item.url}}"
+          title="view {{item.data.title}}"
+          class="flex flex-col justify-between post relative md:transform md:hover:-translate-y-2 md:transition-transform"
+          >
+            <article class="bg-gray-100">
+              <header class="p-5 lg:p-8 h-24 md:h-48">
+                <span class="text-gray-800 text-3xl tracking-tighter font-bold block">{{ item.data.title }}</span>
+                <span class="text-gray-600 text-base font-normal">{{ item.data.tasks }}</span>
+              </header>
+
+              <picture class="block">
+                {% respimg item.data.featuredImg, item.data.title, "w-full" %}
+              </picture>
+            </article>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+      <div class="mt-8 col-span-full w-max mx-auto"><a class="bl text-xl font-bold px-2 py-3" href="/work">See all work</a></div>
+    </div>
+  </div>
+</section>

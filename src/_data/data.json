@@ -1,6 +1,52 @@
 {
-  "name": "ryan bullough",
-  "resumeURL": "",
-  "linkedInURL": "",
-  "githubURL": ""
+  "services": [
+    {
+      "name": "Services",
+      "description": "I don't follow a checklist when working through a problem, firmly believing every opportunity requires it's own unique approach."
+    },
+    {
+      "name": "01. User experience design",
+      "description": "Using the double diamond design methodology, I make sure that I'm solving the right problem - and solving that problem right.",
+      "tags": [
+        "User research",
+        "Usability testing",
+        "Market analysis",
+        "Heuristic analysis",
+        "Survey design",
+        "Persona development",
+        "Design studio",
+        "Information architecture",
+        "Prototyping",
+        "Wireframing"
+      ]
+    },
+    {
+      "name": "02. Web Development",
+      "description": "I develop websites with the future in mind.  For me, that means simple solutions backed with proven technology.  For you, that equates to reliability and maintainability.",
+      "tags": [
+        "Front-end development",
+        "Responsive website development",
+        "Vue",
+        "Svelte",
+        "Ruby on Rails",
+        "React",
+        "Eleventy"
+      ]
+    }
+  ],
+  "featuredWorkTitle": "Featured works",
+  "featuredWorkDescription": "I enjoy creating delightful human experiences in both the digital and physical environments.  Below are some of my most recent, most exciting works.",
+  "name": "Ryan bullough",
+  "contactDetails": {
+    "Email": "mailto:rjbullough@gmail.com",
+    "Resume": "https://drive.google.com/file/d/1c9VW5SPxaf4hSDLS6pZ2zblBmMVqE-SR/view?usp=sharing",
+    "LinkedIn": "https://www.linkedin.com/in/ryan-bullough/",
+    "Github": "https://github.com/rjbullough"
+  },
+  "buildTools": {
+    "figma": "https://www.figma.com/",
+    "11ty": "https://www.11ty.dev/",
+    "tailwindcss": "https://tailwindcss.com/",
+    "deployed via Netlify": "https://www.netlify.com/"
+  }
 }

@@ -1,0 +1,23 @@
+---
+layout: default.njk
+title: Portfolio - Ryan Bullough
+description: My little slice of the internet
+
+---
+
+{%- block hero-%}
+  {% set heroText = "Digital impact doesn't need to be extravagent." %}
+  {% set heroDescription = "Ryan Bullough is an Australian engineer who designs and builds simple, well-considered products with human-centred practices." %}
+  {% set heroBGColor = "bg-gray-200" %}
+  {% set heroTextColor = "black" %}
+  {%- include 'hero.njk' -%}
+{%- endblock hero-%}
+
+{% block featuredWorks %}
+  {% include '_featuredWorks.njk' %}
+{% endblock featuredWorks %}
+
+{% block services %}
+  {% include '_services.njk' %}
+{% endblock services %}
+

@@ -1,0 +1,29 @@
+<a
+  class="w-full block text-black text-center bg-gray-100 sr-only focus:not-sr-only"
+  href="#main-content"
+  >Skip to content</a
+>
+<header role="banner" class="pb-32 bg-{{ headerColor or 'white'}}-500">
+  <div class="max-w-7xl mx-auto px-5 pt-8 pb-11">
+    <a class="inline-block" href="/">
+      <p class="bl font-serif font-bold text-{{ headerTextColor or 'pink-500'}} text-4xl lg:text-6xl lg:pb-16 pb-10 px-2">
+        r.
+      </p>
+    </a>
+
+    <nav aria-label="primary" class="mt-4">
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+        listElement: "ul",
+        listItemElement: "li",
+        listClass: "flex gap-4",
+        listItemClass: "relative before:absolute before:w-full before:h-1 before:rounded before:bg-gray-800 before:bottom-0 before:left-0 before:origin-right before:transition before:scale-x-0 hover:before:scale-x-100 hover:before:origin-left",
+        listItemHasChildrenClass: "",
+        activeListItemClass: "",
+        anchorClass: "uppercase text-xl text-gray-800 transition",
+        activeAnchorClass: "font-bold",
+        activeKey: eleventyNavigation.key,
+        showExcerpt: false
+      }) | safe }}
+    </nav>
+  </div>
+</header>

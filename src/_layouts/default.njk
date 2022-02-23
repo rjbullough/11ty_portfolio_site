@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ title }}</title>
+    <title>{{ title | safe }} | Ryan Bullough</title>
     <meta charset="UTF-8" />
-    {% if description %}
-    <meta name="description" content="{{ description }}" />
-    {% endif %}
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
     />
+
+    {% if description %}
+      <meta name="description" content="{{ description }}" />
+    {% endif %}
+
+    <meta name="title" content="{{ metaTitle | safe }} — {{ metaDescription | safe }}">
+    <meta name="description" content="{{ metaDescription | safe }}">
+    <meta name="robots" content="follow, index" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url)}}">
+    <meta property="og:title" content="{{ metaTitle | safe }}">
+    <meta property="og:description" content="{{ metaDescription | safe }}">
+    {%- if featuredImg %}
+    <meta property="og:image" content="https://res.cloudinary.com/ryan-bullough/image/upload/{{featuredImg}}.png">
+    {%- else -%}
+    <meta property="og:image" content="https://res.cloudinary.com/ryan-bullough/image/upload/index.png">
+    {%- endif %}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | url | absoluteUrl(metadata.url)}}">
+    <meta property="twitter:title" content="{{ metaTitle | safe }}">
+    <meta property="twitter:description" content="{{ metaDescription | safe }}">
+    {%- if featuredImg %}
+    <meta property="twitter:image" content="https://res.cloudinary.com/ryan-bullough/image/upload/{{featuredImg}}.png">
+    {%- else -%}
+    <meta property="twitter:image" content="https://res.cloudinary.com/ryan-bullough/image/upload/index.png">
+    {%- endif %}
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <link rel="manifest" href="{{'/site.webmanifest' | url}}">
+
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url)}}" />
     <link rel="stylesheet" href="/style.css?v={% version %}" />
-    <script defer src="/js/alpine.js?v={% version %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-zoom@latest/dist/zoom.min.js"></script>
+    <script defer src="/js/main.js"></script>
+
   </head>
+
   <body class="h-full text-gray-900 antialiased bg-gray-50 bg-top bg-contain">
-    {% include "site-header.njk" %}
+    {% include "_site-header.njk" %}
+
     <main tabindex="-1" id="main-content">
       {% block content %}
-      {{ content | safe }}
+        {{ content | safe }}
       {% endblock %}
     </main>
-    {% include "site-footer.html" %}
+
+    {% include "_site-footer.njk" %}
   </body>
 </html>

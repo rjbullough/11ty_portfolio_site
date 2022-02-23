@@ -1,0 +1,24 @@
+---
+layout: default.njk
+---
+
+{%- block singleTop-%}
+  {%- include '_singletop.njk' -%}
+{%- endblock singleTop-%}
+
+<section id="start" class="max-w-screen-xl mx-auto px-5">
+  <article
+    class="pb-40 work text-lg tracking-tight text-gray-700 dark:text-gray-300 md:grid md:gap-x-10 md:gap-y-5 md:grid-cols-10 md:items-start"
+  >
+    {{ content | safe }}
+  </article>
+
+  <div class="text-center">
+    <a class="text-gray-300 font-medium" href="#post-head">Back to top</a>
+  </div>
+</section>
+
+{%- block relatedItems-%}
+  {%- include '_relatedItems.njk' -%}
+{%- endblock relatedItems-%}
+

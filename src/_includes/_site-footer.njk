@@ -1,0 +1,42 @@
+<div class="relative max-w-screen-md mx-auto pt-24 md:pt-32 pb-32 md:pb-48 md:leading-tight text-center font-bold tracking-tighter text-4xl md:text-5xl px-10">
+  <span class="block">⚡</span>
+  <span>Now taking new projects.</span>
+
+
+  <div class="mt-4">
+    <a
+      href="{{ data.contactDetails.Email }}"
+      title="get in touch"
+      target="_blank"
+      rel="noreferrer"
+      class="bl text-gray-400 text-xl tracking-tight py-4 dark:text-yellow-200 dark:hover:text-yellow-400 transition-colors hover:text-gray-900"
+    >contact via Email
+    </a>
+  </div>
+</div>
+
+<footer class="max-w-7xl mx-auto px-5 pt-8 pb-4">
+  <div>
+    <h4>connect</h4>
+    <ul class="flex flex-col md:flex-row">
+      {% for entry, address in data.contactDetails %}
+        <li class="md:mr-5 mb-5">
+          <a class="link font-serif text-4xl" href="{{ address }}">{{ entry }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="mt-8">
+    <p>Copyright {% thisYear %} © Ryan Bullough.</p>
+    <p class="text-sm">
+      Site built with
+      {% for item, url in data.buildTools %}
+        {%- if loop.first %} {% elif loop.last %} &
+          {% else %},
+        {% endif %}
+          <a href="{{ url }}" class="text-black font-semibold hover:text-blue-500 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer"  class="shadow md:transition-colors sm:hover:text-blue-500 md:hover:shadow-md">{{ item }}</a>
+        {%- if loop.last -%}. {%- endif -%}
+      {% endfor %}
+    </p>
+  </div>
+</footer>

@@ -1,15 +1,24 @@
 <!-- hero -->
-<section id="hero" class="pt-8 pb-32 md:pt-32 {{heroBGColor}}">
+<section id="hero" class="pt-52 pb-32 {{ heroBGColor }}">
   <div class="max-w-screen-xl m-auto px-5">
-      <img src="{{metadata.author.avatar}}" class="rounded-full w-16 h-16 mb-5" alt="my avatar" width="64" height="64" />
-
-      <div class="font-black grid grid-cols-12 gap-5">
-        <div class="col-start-1 col-end-12 lg:col-end-10">
-          <h1 class="text-5xl md:text-7xl tracking-tighter font-bold md:mb-3 text-{{ heroTextColor}}-100 dark:text-white">{{ heroText | safe }} </h1>
-          <h2 class="text-xl md:text-3xl text-{{ heroTextColor}}-200 font-light dark:text-gray-400"> {{ heroDescription }}</h2>
-        </div>
+    <div class="font-black grid grid-cols-12 gap-5">
+      <div class="col-start-1 col-end-12 lg:col-end-10">
+        <h1
+          class="text-5xl md:text-8xl tracking-tighter font-bold mb-3 text-{{
+            heroTextColor
+          }}-100 dark:text-white"
+        >
+          {{ heroText | safe }}
+        </h1>
+        <p
+          class="text-xl md:text-3xl text-{{
+            heroTextColor
+          }}-200 font-light dark:text-gray-400"
+        >
+          {{ heroDescription | safe }}
+        </p>
       </div>
+    </div>
   </div>
 </section>
 <!-- hero end -->
-</div>
