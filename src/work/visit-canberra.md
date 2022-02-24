@@ -6,7 +6,6 @@ title: Visit Canberra
 description: A tourism website designed to grow the visitor economy of Canberra by highlighting events, attractions and local businesses to prospective tourists.
 projectUrl: https://www.visitcanberra.com.au/
 featuredImg: visit-canberra--featured
-bgColor: D5E7F3
 featured: true
 tasks: Front-end
 year: 2021
@@ -22,7 +21,7 @@ tags: ['works', 'web dev', 'vue', 'drupal']
 
 ### The challenge 👀
 
-Utilise modern web technology to integrate the [Australian Tourism Data Warehouse](https://atdw.com.au/){.link .something} and provide a canvas for content-creators to champion brand Canberra.<br>
+Utilise modern web technology to integrate the [Australian Tourism Data Warehouse](https://atdw.com.au/){.link} and provide a canvas for content-creators to champion brand Canberra.<br>
 Visit Canberra is a SPA built using Vue.js, the front-end consuming data from a Drupal 9 back-end in a headless capacity.
 
 </div>

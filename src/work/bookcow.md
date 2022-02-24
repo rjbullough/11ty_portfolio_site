@@ -1,7 +1,7 @@
 ---
 layout: single
 metaTitle: Case study - The Book Cow
-metaDescription: Case study - Reconsidering an independent retailer’s approach toward e-commerce
+metaDescription: Reconsidering an independent retailer’s approach toward e-commerce.
 title: The Book Cow
 description: Helping a local bookstore turn the page on poor user experience.
 featuredImg: bookcow--mock

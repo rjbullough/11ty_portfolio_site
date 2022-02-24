@@ -1,7 +1,7 @@
 ---
 layout: single
 metaTitle: Case study - ID Care
-metaDescription: Case study - Examining the large scale benefits of UX design
+metaDescription: Examining the large scale benefits of UX design.
 title: ID Care
 description: Applying human centred design philosophies to limit the impacts of scam and identity theft attacks.
 featuredImg: idcare--featured

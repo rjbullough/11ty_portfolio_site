@@ -6,7 +6,6 @@ title: 4 Canberra
 description: Reigniting the local tourism economy following COVID-19 by shining a light on four local tourism operators.
 projectUrl: https://www.4canberra.com.au/
 featuredImg: 4canberra--featured
-bgColor: D5E7F3
 featured: false
 tasks: Front-end
 year: 2021

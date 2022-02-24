@@ -1,7 +1,7 @@
 ---
 layout: single
 metaTitle: Case study - Otivo
-metaDescription: Case study - Smoothing out the bumps on the road to enlightenment
+metaDescription: Smoothing out the bumps on the road to enlightenment
 title: Otivo
 description: A considered approach to user onboarding for a financial planning service.
 featuredImg: otivo--logo
@@ -14,7 +14,6 @@ year: 2022
 date: 2022-02-16
 tags: ['works', 'ux', 'case study']
 ---
-
 
 <div class="col-start-3 col-end-9">
 
