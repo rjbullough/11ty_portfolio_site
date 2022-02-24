@@ -5,7 +5,9 @@ metaDescription: Case study - Smoothing out the bumps on the road to enlightenme
 title: Otivo
 description: A considered approach to user onboarding for a financial planning service.
 featuredImg: otivo--logo
-bgColor: 00ADD8
+testimonial: Ryan is a straight talker.  My experience working with him is that he's never afraid to tackle the 'hard stuff' and is always open minded to a solution.  Nothing appears insurmountable to him and his UX approach is thoughtful and always backed up by research from real user feedback.  It's a pleasure to work with him.
+clientName: Nathan Isterling
+clientPos: CTO
 featured: true
 tasks: Human-centred design
 year: 2022
