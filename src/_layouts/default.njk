@@ -8,14 +8,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
     />
-
+    <meta name="title" content="{{ metaTitle | safe }} — {{ metaDescription | safe }}">
+    <meta name="description" content="{{ metaDescription | safe }}">
+    <meta name="robots" content="follow, index" />
     {% if description %}
       <meta name="description" content="{{ description }}" />
     {% endif %}
 
-    <meta name="title" content="{{ metaTitle | safe }} — {{ metaDescription | safe }}">
-    <meta name="description" content="{{ metaDescription | safe }}">
-    <meta name="robots" content="follow, index" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQL4S6MW8C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XQL4S6MW8C');
+    </script>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url)}}">
@@ -37,17 +46,17 @@
     {%- else -%}
     <meta property="twitter:image" content="https://res.cloudinary.com/ryan-bullough/image/upload/index.png">
     {%- endif %}
+
+
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-
-    <link rel="manifest" href="{{'/site.webmanifest' | url}}">
-
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
 
+    <link rel="manifest" href="{{'/site.webmanifest' | url}}">
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url)}}" />
     <link rel="stylesheet" href="/style.css?v={% version %}" />
     <script src="https://cdn.jsdelivr.net/npm/smooth-zoom@latest/dist/zoom.min.js"></script>
