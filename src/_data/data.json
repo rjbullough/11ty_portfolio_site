@@ -2,11 +2,11 @@
   "services": [
     {
       "name": "Services",
-      "description": "I don't follow a checklist when working through a problem, firmly believing every opportunity requires it's own unique approach."
+      "description": "A well considered solution requires it's own unique approach.  No project is ever the same, and it's why you wont see formulas or checklists when working with me."
     },
     {
       "name": "01. User experience design",
-      "description": "Using the double diamond design methodology, I make sure that I'm solving the right problem - and solving that problem right.",
+      "description": "Using the Double Diamond design methodology allows me to deliver significant, long-lasting, positive change.",
       "tags": [
         "User research",
         "Usability testing",
@@ -22,7 +22,7 @@
     },
     {
       "name": "02. Web Development",
-      "description": "I develop websites with the future in mind.  For me, that means simple solutions backed with proven technology.  For you, that equates to reliability and maintainability.",
+      "description": "I develop websites with the future in mind.  For me, that means simple solutions backed with proven technology.<br />For you? Reliability and maintainability.",
       "tags": [
         "Front-end development",
         "Responsive website development",
