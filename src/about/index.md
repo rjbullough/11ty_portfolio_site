@@ -34,7 +34,7 @@ Starry-eyed pragmatist.{.font-serif .py-8 .md:py-14 .text-4xl .md:text-7xl}
 
 <br>When Ryan can successfully :q vim, he spends time with his Australian Shepherd, Texas.
 
-<br>Open to both human-centred design and frontend engineering contracts/roles - remote or on-location.
+<br>Open to both human-centred design and frontend engineering contracts/roles - remote or on-location.{.monospace .font-bold}
 
 </div>
 

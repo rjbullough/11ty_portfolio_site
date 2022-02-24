@@ -18,6 +18,9 @@
   p {
     @apply text-lg;
   }
+  p.monospace {
+    font-family: courier, monospace;
+  }
   a.link {
     @apply relative before:bg-pink-400 before:absolute before:left-0 before:bottom-[1px] before:w-full before:h-0.5 before:-z-10 before:transition-all hover:before:bottom-0 hover:before:h-full;
   }
