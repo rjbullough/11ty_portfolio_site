@@ -1,6 +1,8 @@
 ---
 title: About
-description: About yours truly
+description: All about me - Ryan Bullough!
+metaTitle: About - Ryan Bullough
+metaDescription: The principles and morals that I stand by.
 layout: default.njk
 heroText: Hi, I'm Ryan.
 heroDescription: I'm a user experience designer && web developer based in Canberra, Australia.
