@@ -7,6 +7,8 @@ window.onload = function () {
   var tocPath = document.querySelector(".toc-marker path");
   var tocItems;
 
+  if (!toc || !tocPath) return;
+
   // Factor of screen size that the element must cross
   // before it's considered visible
   var TOP_MARGIN = 0.1,
