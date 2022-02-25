@@ -11,11 +11,32 @@ year: 2022
 date: 2022-01-16
 tags: ['works', 'ux', 'case study']
 ---
+<nav class="toc hidden lg:block lg:sticky lg:top-10 mt-10 col-span-2">
 
+- [TL;DR](#tldr)
+- [Overview](#overview)
+  - [The client](#the-client)
+  - [Team and duration](#team-and-duration)
+  - [Methods](#methods)
+- [Identity security?](#identity-security)
+- [We’re in the response and recovery business](#were-in-the-response-and-recovery-business)
+- [Targeted, vulnerable and without a care in the world](#targeted-vulnerable-and-without-a-care-in-the-world)
+- [Changing minds, winning hearts](#changing-minds-winning-hearts)
+- [Now trending: scam advice](#now-trending-scam-advice)
+- [A place for everything, and everything in it's place](#a-place-for-everything-and-everything-in-its-place)
+- [Did it all work?](#did-it-all-work)
+
+<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+</nav>
 
 <div class="col-start-3 col-end-9">
 
-  ### TL;DR 💨
+<div class="col-start-3 col-end-9">
+
+  ### TL;DR
 
   ID Care help victims recover from scam attacks and identity theft. They have a wealth of knowledge on the topic, but it’s hard to find and isn’t presented in a cohesive manner.
 
@@ -56,7 +77,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Identity security — what’s that? 🧐
+  ### Identity security?
 
   Successful products or services must be both useful, and usable to their audience. Great design solutions need to consider that audience, but also the business that offers them.
 
@@ -66,7 +87,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### We’re in the response and recovery business ❤️‍🩹
+  ### We’re in the response and recovery business
 
   Our deep-dive in to ID Care proved immensely useful. We gained a greater understanding of the impacts that both identity theft and scam attacks have on Australians — over $850 million dollars in financial loss in 2020 alone.
 
@@ -82,7 +103,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Targeted, vulnerable and without a care in the world 👶
+  ### Targeted, vulnerable and without a care in the world
 
   With a better understanding of the business and its goals, we set out to explore the people who interact with the service.
 
@@ -100,7 +121,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Changing minds, winning hearts 🙌
+  ### Changing minds, winning hearts
 
   The best user interviews are usually the result of careful planning, active listening and an enjoyable experience for the participant — nobody wants to feel like they’re being quizzed!
 
@@ -117,7 +138,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-### Now trending — scam advice 📈
+### Now trending: scam advice
 
   ID Care doesn’t have a huge presence on social media — a few twitter posts, and a smattering of facebook posts without a real sense of cohesion.
 
@@ -133,7 +154,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### A place for everything, everything in it's place 📦
+  ### A place for everything, and everything in it's place
 
   ID Care’s information about the types of scam and identity theft attacks circulating in Australia weren’t presented in a coherent fashion. An interested party would have to search through past newsletters, fact sheets, news articles and videos to become fully informed.
 
@@ -151,13 +172,15 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Did it all work? 🧐
+  ### Did it all work?
 
   We can’t be sure if our design solutions ultimately solved the goal of helping ID Care prevent Australians from falling victim to scam or identity theft attacks — it was, after all, an education project.
 
   <br>We did test our solutions of course, and received hugely positive feedback that it was easier to learn about how these attacks are typically carried out — but there was still a lot of work to do!
 
   <br>The important take-away is that feedback should drive the next round of change and iteration, each time further refining and coming closer to perfection.
+
+</div>
 
 </div>
 

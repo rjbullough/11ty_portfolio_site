@@ -12,10 +12,31 @@ date: 2022-01-06
 tags: ['works', 'ux', 'case study']
 ---
 
+<nav class="toc hidden lg:block lg:sticky lg:top-10 mt-10 col-span-2">
+
+- [TL;DR](#tldr)
+- [Overview](#overview)
+  - [Team and duration](#team-and-duration)
+  - [Methods](#methods)
+- [“It just feels so clunky”](#it-just-feels-so-clunky)
+- [Simple solutions](#simple-solutions)
+- [Invite early feedback](#invite-early-feedback)
+- [Building trust](#building-trust)
+- [Find the right book, fast](#find-the-right-book-fast)
+- [Accelerate the checkout process](#accelerate-the-checkout-process)
+- [Final Thoughts](#final-thoughts)
+
+<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+</nav>
 
 <div class="col-start-3 col-end-9">
 
-  ### TL;DR 💨
+<div class="col-start-3 col-end-9">
+
+  ### TL;DR
 
   The Book Cow is a small, independent book store located in one of Canberra’s oldest suburbs.
 
@@ -42,7 +63,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### “It just feels so clunky” 😩
+  ### “It just feels so clunky”
 
   The Book Cow is unique in its physical environment - a place to share the joy of reading nestled amongst a slew of cafes and eateries.
 
@@ -56,7 +77,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Shine a light on the business and reward customers with increased flexibility and efficiency 🔆
+  ### Simple solutions
 
   The designed solution focused on three key areas:
   1. Presenting a cohesive experience by revisiting how the store organised and presented its own content.
@@ -67,7 +88,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Simplify and invite feedback 👂
+  ### Invite early feedback
 
   Given the short timeframe in which the project was conducted, I focused on what could provide the most ‘bang for buck’ when selecting the right tools to explore the problem.
 
@@ -79,7 +100,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Build trust and foster community engagement 🌱
+  ### Building trust
 
   The Book Cow primarily engages with its audience via social media, somewhat orphaning the website and it’s visitors from some fantastic in-house content.
 
@@ -95,7 +116,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-### Find the right book, fast 📚
+### Find the right book, fast
 
   The original store interface was quite limiting in its ability to surface the right type of product, with just book categories available to help narrow down a request.
 
@@ -117,7 +138,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Accelerate the checkout process 🏎
+  ### Accelerate the checkout process
 
   The Book Cow’s current checkout flow can be a meandering mess of frustration. Online customers must often input information that isn’t necessary to complete their purchase, and making changes to that data requires clicking through each step again in series.
 
@@ -139,7 +160,7 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-  ### Final Thoughts 🎬
+  ### Final Thoughts
 
   Books are an interesting product. You’re very likely to get the same thing no matter where you buy it from, which leaves a store like The Book Cow with two ways to differentiate itself from the competition — price and experience.
 
@@ -147,4 +168,4 @@ tags: ['works', 'ux', 'case study']
 
 </div>
 
-
+</div>

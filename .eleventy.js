@@ -3,8 +3,12 @@ const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownIt = require("markdown-it");
-const now = String(Date.now());
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownItAnchor = require("markdown-it-anchor");
+const string = require("string");
+
+const now = String(Date.now());
+const slugify = (s) => string(s).slugify().toString();
 
 const markdownItOptions = {
   html: true,
@@ -12,7 +16,14 @@ const markdownItOptions = {
   linkify: true,
 };
 
-const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+const markdownLib = markdownIt(markdownItOptions)
+  .use(markdownItAttrs)
+  .use(markdownItAnchor, {
+    slugify: slugify,
+    permalink: true,
+    permalinkClass: "direct-link text-black/50 hover:text-black/100 transition",
+    permalinkSymbol: "#",
+  });
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);

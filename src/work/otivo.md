@@ -14,10 +14,30 @@ year: 2022
 date: 2022-02-16
 tags: ['works', 'ux', 'case study']
 ---
+<nav class="toc hidden lg:block lg:sticky lg:top-10 mt-10 col-span-2">
+
+- [TL;DR](#tldr)
+- [Overview](#overview)
+  - [The client](#the-client)
+  - [Team and duration](#team-and-duration)
+  - [Methods](#methods)
+- [The kick-off meeting](#the-kick-off-meeting)
+- [Exploring the problem space](#exploring-the-problem-space)
+- [Testing assumptions](#testing-assumptions)
+- [Selling ideas](#selling-ideas)
+- [Putting pen to paper](#putting-pen-to-paper)
+- [Wrapping up](#wrapping-up)
+
+<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+</nav>
 
 <div class="col-start-3 col-end-9">
 
-### TL;DR 💨
+<div class="col-start-3 col-end-9">
+
+### TL;DR
 
 Otivo, an Australian business offering licensed online financial advice, challenged a colleague and myself to improve their service before its upcoming launch.<br>
 Over three weeks, we analysed the business and it’s customers to present a solution aimed at familiarising new users to the service by personalising their first touch points.
@@ -47,7 +67,7 @@ Market analysis, heuristic analysis, user research, affinity mapping, customer j
 
 <div class="col-start-3 col-end-9">
 
-### The kick-off meeting 🏉
+### The kick-off meeting
 
 <div class="mb-10">
 {% respimg 'otivo--dogs', "Two dogs meeting eachother on a street" %}
@@ -63,7 +83,7 @@ Successful design solutions consider not only the end user, but the business del
 
 <div class="col-start-3 col-end-9">
 
-### Exploring the problem space 🧭
+### Exploring the problem space
 
 Armed with a better understanding of the business, it’s users, and the constraints the project was bundled with, we could start exploring the problem space.<br>
 We started off by actually using the product.<br>
@@ -80,7 +100,7 @@ These activities helped form our assumptions about the initial state of the serv
 
 <div class="col-start-3 col-end-9">
 
-### Testing assumptions 🧑‍🔬
+### Testing assumptions
 
 Our initial assumptions were that Otivo wasn’t conveying their value proposition early enough via it’s website, that the signup process didn’t take advantage of the excitement a user should experience at that point in their journey, and finally that the onboarding process could be improved to better familiarise a user with the service.<br>
 
@@ -106,7 +126,7 @@ Our next step was to see if that’s what users thought too.
 
 <div class="col-start-3 col-end-9">
 
-### Selling ideas 🤑
+### Selling ideas
 
 We thought that all three of our recommendations had enough merit to pursue in their own right. We also knew that we didn’t have the time to dedicate to each of them and produce a good result.
 
@@ -123,7 +143,7 @@ We thought that all three of our recommendations had enough merit to pursue in t
 
 <div class="col-start-3 col-end-9">
 
-### Putting pen to paper ✍️
+### Putting pen to paper
 
 The next stage of the project rushed by quite quickly in comparison. We ideated design concepts, created a working prototype and tested it in the crucible of user feedback.
 
@@ -144,7 +164,7 @@ We also found there was more to do, with expectations differing when it came to 
 
 <div class="col-start-3 col-end-9">
 
-### Wrapping up 👌
+### Wrapping up
 
 The next challenge was how to finalise the project and complete a handover with the client.
 
@@ -154,5 +174,6 @@ The next challenge was how to finalise the project and complete a handover with 
 
 </div>
 
+</div>
 
 

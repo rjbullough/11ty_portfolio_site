@@ -1,6 +1,6 @@
 {
   "name": "Ryan Bullough's personal portfolio site",
-  "short_name": "RJB - Portfolio",
+  "short_name": "RB - Portfolio",
   "icons": [
     {
       "src": "/images/android-chrome-192x192.png",
@@ -16,5 +16,5 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "https://ryan-bullough.design"
+  "start_url": "https://www.ryan-bullough.design"
 }
