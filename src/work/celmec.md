@@ -22,7 +22,7 @@ tags: ['works', 'web dev', 'drupal']
 
   ### The challenge 👀
 
-  Deliver a flexible web solution to feature the companie's products and celebrate some of their commercial success.
+  Deliver a flexible web solution to feature the company's products and celebrate some of their commercial success.
 
 </div>
 
