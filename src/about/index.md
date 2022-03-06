@@ -1,8 +1,8 @@
 ---
 title: About
-description: All about me - Ryan Bullough!
-metaTitle: About - Ryan Bullough
-metaDescription: The principles and morals that I stand by.
+description: Personal information about freelancer Ryan Bullough
+metaTitle: About freelance developer + UX designer - Ryan Bullough
+metaDescription: Personal information about freelance developer + UX designer, Ryan Bullough.
 layout: default.njk
 heroText: Hi, I'm Ryan.
 heroDescription: I'm a user experience designer && web developer based in Canberra, Australia.

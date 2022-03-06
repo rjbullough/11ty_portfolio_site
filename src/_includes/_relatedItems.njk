@@ -13,11 +13,11 @@
 {% endif %}
 
 {% if previousPost or nextPost %}
-<div class="grid grid-cols-2 mt-10 max-w-screen-md mx-auto px-5 md:px-0 gap-x-2 border-t border-gray-200 dark:border-gray-800">
+<div class="grid grid-cols-2 mt-10 max-w-screen-md mx-auto px-5 md:px-0 gap-x-2 border-t border-gray-200">
   <div id="previousPost" class="py-5">
     {% if previousPost %}
       <strong class="block text-xs tracking-widest font-normal uppercase text-gray-400" aria-label="Navigate to previous item">Previous</strong>
-      <a href="{{ previousPost.url }}" class="text-lg hover:text-pink-500 dark:hover:text-yellow-200 transition-colors font-bold tracking-tight">
+      <a href="{{ previousPost.url }}" class="text-lg hover:text-pink-500 transition-colors font-bold tracking-tight">
         <span class="block" style="min-height:80px;">{{ previousPost.data.title }}</span>
         {% if previousPost.data.featuredImg %}
           <picture class="inline">
@@ -37,7 +37,7 @@
   <div id="nextPost" class="w-full py-5 text-right">
     {% if nextPost %}
       <strong class="block text-xs tracking-widest font-normal uppercase text-gray-400" aria-label="Navigate to Next item">Next</strong>
-      <a href="{{ nextPost.url }}" class="text-lg leading-tight tracking-tight font-bold hover:text-pink-500 dark:hover:text-yellow-200 transition-colors">
+      <a href="{{ nextPost.url }}" class="text-lg leading-tight tracking-tight font-bold hover:text-pink-500 transition-colors">
         <span class="block" style="min-height:80px;">{{ nextPost.data.title }}</span>
         {% if nextPost.data.featuredImg %}
           <picture class="inline">

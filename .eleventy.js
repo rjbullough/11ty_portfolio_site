@@ -118,7 +118,7 @@ module.exports = function (eleventyConfig) {
 
     return `<figure class=""><img class="zoomable" loading="lazy" src="${src}" srcset="${srcset}" alt="${
       alt ? alt : ""
-    }" width="400" height="300"><figcaption class="text-center text-sm mt-3 text-gray-600 dark:text-gray-200">${
+    }" width="400" height="300"><figcaption class="text-center text-sm mt-3 text-gray-600">${
       caption ? caption : ""
     }</figcaption></figure>`;
   });

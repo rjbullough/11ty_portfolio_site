@@ -17,7 +17,7 @@ permalink: /tags/{{ tag }}/
 ---
 <section class="py-8 lg:-mt-32 lg:pb-32">
   <div class="max-w-screen-xl m-auto px-5">
-    <h1 class="mb-5 text-5xl md:text-7xl tracking-tighter font-bold text-gray-800 dark:text-white">Tags</h1>
+    <h1 class="mb-5 text-5xl md:text-7xl tracking-tighter font-bold text-gray-800">Tags</h1>
     {% set postslist = collections[ tag ] %}
     <ul class="md:grid md:grid-cols-2 md:gap-5 list-inside list-disc">
       {% for post in postslist  %}
@@ -28,12 +28,12 @@ permalink: /tags/{{ tag }}/
               <a
                 href="{{ post.url | url }}"
                 title="read {{ post.data.title }}"
-                class="font-semibold transition text-xl border-b hover:text-purple-800 border-gray-200 hover:border-purple-300 dark:text-yellow-200 dark:border-gray-800 dark:hover:text-yellow-400 dark:hover:border-yellow-100 dark:visited:text-gray-300"
+                class="font-semibold transition text-xl border-b hover:text-purple-800 border-gray-200 hover:border-purple-300"
               >
                 {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
               </a>
             </h3>
-            <time datetime="{{ post.date | htmlDateString }}" class="font-serif text-gray-600 text-sm dark:text-gray-300">&mdash; {{ post.date | readableDate }}</time>
+            <time datetime="{{ post.date | htmlDateString }}" class="font-serif text-gray-600 text-sm">&mdash; {{ post.date | readableDate }}</time>
           </article>
         </li>
         {% endif %}

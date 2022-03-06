@@ -9,7 +9,7 @@
       title="get in touch"
       target="_blank"
       rel="noreferrer"
-      class="bl text-gray-400 text-xl tracking-tight py-4 dark:text-yellow-200 dark:hover:text-yellow-400 transition-colors hover:text-gray-900"
+      class="bl text-gray-400 text-xl tracking-tight py-4 transition-colors hover:text-gray-900"
     >contact via Email
     </a>
   </div>
@@ -34,7 +34,7 @@
         {%- if loop.first %} {% elif loop.last %} &
           {% else %},
         {% endif %}
-          <a href="{{ url }}" class="text-black font-semibold hover:text-blue-500 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer"  class="shadow md:transition-colors sm:hover:text-blue-500 md:hover:shadow-md">{{ item }}</a>
+          <a href="{{ url }}" class="text-black font-semibold hover:text-blue-500" target="_blank" rel="noreferrer"  class="shadow md:transition-colors sm:hover:text-blue-500 md:hover:shadow-md">{{ item }}</a>
         {%- if loop.last -%}. {%- endif -%}
       {% endfor %}
     </p>

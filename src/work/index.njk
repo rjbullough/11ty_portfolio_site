@@ -18,7 +18,7 @@ eleventyNavigation:
 
   <div class="hidden md:block mx-2 my-3">
     <span class="font-bold">{{item.data.title}}</span>
-    <span class="text-gray-700 dark:text-gray-300">&mdash; {{item.data.description}}</span>
+    <span class="text-gray-700">&mdash; {{item.data.description}}</span>
     <ul class="flex gap-1 mt-3">
       {% for tag in item.data.tags %}
         {% if tag != 'works' %}
