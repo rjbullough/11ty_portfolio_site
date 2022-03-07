@@ -175,5 +175,3 @@ The next challenge was how to finalise the project and complete a handover with 
 </div>
 
 </div>
-
-
