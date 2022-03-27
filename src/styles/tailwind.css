@@ -65,6 +65,18 @@
   .toc-marker path {
     transition: all 0.3s ease;
   }
+
+  ::-webkit-scrollbar {
+    @apply h-4;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent border border-solid border-gray-100 rounded-sm;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-pink-500 rounded-sm;
+  }
 }
 
 :root {
