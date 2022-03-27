@@ -3,6 +3,11 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./_site/**/*.html"],
   theme: {
+    extend: {
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",

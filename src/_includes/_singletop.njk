@@ -50,20 +50,4 @@
     </div>
   {% endif %}
 
-  {# this is only for posts #}
-  {% if tags %}
-    {% if 'posts' in tags %}
-    <div class="md:grid grid-cols-10 gap-x-10 gap-y-5 mt-12">
-      <div class="col-span-full lg:col-start-3 lg:col-end-9">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-tighter">{{title}}</h1>
-        <P class="mt-6 text-xl font-xl">{{ description }}</p>
-      </div>
-      {% if featuredImg %}
-          {% respimg featuredImg, title, 'mt-6 col-span-full lg:col-start-2 lg:col-end-10 w-full mb-5' %}
-      {% endif %}
-      {% include './_postmeta.njk' %}
-    </div>
-    {% endif %}
-  {% endif %}
-
 </section>

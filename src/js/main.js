@@ -9,8 +9,7 @@ window.onload = function () {
 
   if (!toc || !tocPath) return;
 
-  // Factor of screen size that the element must cross
-  // before it's considered visible
+  // Factor of screen size that the element must cross before it's considered visible
   var TOP_MARGIN = 0.1,
     BOTTOM_MARGIN = 0.2;
 
@@ -57,8 +56,7 @@ window.onload = function () {
         path.push("M", x, y, "L", x, y + height);
         item.pathStart = 0;
       } else {
-        // Draw an additional line when there's a change in
-        // indent levels
+        // Draw an additional line when there's a change in indent levels
         if (pathIndent !== x) path.push("L", pathIndent, y);
 
         path.push("L", x, y);
@@ -107,8 +105,7 @@ window.onload = function () {
       }
     });
 
-    // Specify the visible path or hide the path altogether
-    // if there are no visible items
+    // Specify the visible path or hide the path altogether if there are no visible items
     if (visibleItems > 0 && pathStart < pathEnd) {
       if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
         tocPath.setAttribute("stroke-dashoffset", "1");

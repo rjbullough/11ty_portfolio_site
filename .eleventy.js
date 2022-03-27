@@ -1,10 +1,10 @@
-const htmlmin = require("html-minifier");
 const { DateTime } = require("luxon");
+const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const markdownItAttrs = require("markdown-it-attrs");
 const markdownIt = require("markdown-it");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const string = require("string");
 
 const now = String(Date.now());
@@ -39,27 +39,6 @@ module.exports = function (eleventyConfig) {
     "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
   });
 
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-  });
-
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (
-      process.env.ELEVENTY_PRODUCTION &&
-      outputPath &&
-      outputPath.endsWith(".html")
-    ) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      });
-      return minified;
-    }
-
-    return content;
-  });
-
   eleventyConfig.cloudinaryCloudName = "ryan-bullough";
   eleventyConfig.srcsetWidths = [
     { w: 400, v: 400 },
@@ -73,6 +52,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.fallbackWidth = 800;
   eleventyConfig.format = "webp";
 
+  // Shortcodes
   eleventyConfig.addShortcode("version", function () {
     return now;
   });
@@ -98,14 +78,6 @@ module.exports = function (eleventyConfig) {
     }" width="400" height="300" sizes="100vw">`;
   });
 
-  eleventyConfig.addShortcode("pagebreak", () => {
-    return `<div class="mt-14 mb-6 flex justify-center">
-      <span class="inline-block w-1 h-1 bg-pink-500 rounded mr-5"></span>
-      <span class="inline-block w-1 h-1 bg-pink-500 rounded mr-5"></span>
-      <span class="inline-block w-1 h-1 bg-pink-500 rounded"></span>
-    </div>`;
-  });
-
   eleventyConfig.addShortcode("figure", (path, alt, caption) => {
     const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
     const src = `${fetchBase}q_auto,f_auto,w_400/${path}.${eleventyConfig.format}`;
@@ -121,6 +93,35 @@ module.exports = function (eleventyConfig) {
     }" width="400" height="300"><figcaption class="text-center text-sm mt-3 text-gray-600">${
       caption ? caption : ""
     }</figcaption></figure>`;
+  });
+
+  eleventyConfig.addShortcode("pagebreak", () => {
+    return `<div class="mt-14 mb-6 flex justify-center">
+      <span class="inline-block w-1 h-1 bg-pink-500 rounded mr-5"></span>
+      <span class="inline-block w-1 h-1 bg-pink-500 rounded mr-5"></span>
+      <span class="inline-block w-1 h-1 bg-pink-500 rounded"></span>
+    </div>`;
+  });
+
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith(".html")
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   return {

@@ -8,32 +8,31 @@ eleventyNavigation:
   key: Work
   order: 200
 ---
-<article class="grid grid-cols-1 gap-5 md:gap-10 lg:gap-12 sm:grid-cols-2 lg:grid-cols-3 md:grid-flow-row-dense md:max-w-screen-xl md:mx-auto py-10 px-5">
-{% for item in collections.works | reverse %}
-  <a
-    href="{{ item.url | url }}"
-    title="view project details"
-    class="bl block md:transform md:hover:-translate-y-2 md:transition-transform"
-  >
-
-  {% respimg item.data.featuredImg, item.data.title, 'w-full' %}
-
-  <div class="hidden md:block mx-2 my-3">
-    <span class="font-bold">{{item.data.title}}</span>
-    <span class="text-gray-700">&mdash; {{item.data.description}}</span>
-    <ul class="flex gap-1 mt-3">
-      {% for tag in item.data.tags %}
-        {% if tag != 'works' %}
-          <li class="font-semibold py-1 px-2 bg-gray-100">
-            <span>
-              {{tag}}
-            </span>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  </a>
-
-{% endfor %}
-</article>
+<section class="grid grid-cols-1 gap-5 md:gap-10 lg:gap-12 sm:grid-cols-2 lg:grid-cols-3 md:grid-flow-row-dense md:max-w-screen-xl md:mx-auto py-10 px-5">
+  {% for item in collections.works | reverse %}
+    <article>
+      <a
+        href="{{ item.url | url }}"
+        title="view project details"
+        class="bl block md:transform md:hover:-translate-y-2 md:transition-transform"
+      >
+        {% respimg item.data.featuredImg, item.data.title, 'w-full aspect-4/3' %}
+      </a>
+      <div class="hidden md:block mx-2 my-3">
+        <span class="font-bold">{{item.data.title}}</span>
+        <span class="text-gray-700">&mdash; {{item.data.description}}</span>
+        <ul class="flex gap-1 mt-3">
+          {% for tag in item.data.tags %}
+            {% if tag != 'works' %}
+              <li class="font-semibold hover:cursor-pointer">
+                <a href="/tag/{{ tag | slug }}" class="py-1 px-2 bg-gray-100 hover:bg-gray-200">
+                  {{ tag}}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+  {% endfor %}
+</section>
