@@ -49,6 +49,7 @@ testimonial: Ryan is a straight talker.  My experience working with him is that 
 
   [Otivo](http://www.otivo.com.au/){.link} aims to help every Aussie take control of their financial future by offering licensed online financial advice.
 
+
   #### Team and duration
 
   Conducted over three weeks by myself and one other UX consultant.

@@ -1,46 +1,43 @@
 <section id="post-head" class="px-5 max-w-screen-xl mx-auto lg:-mt-22">
-  {# this is for work #}
-
   {% if tags %}
     {% if 'works' in tags %}
-    <div class="grid grid-cols-12 gap-5">
-      <div class="col-span-full lg:col-start-1 lg:col-end-10 pb-8 md:py-10">
-        <h1 class="text-4xl md:text-5xl md:leading-tight tracking-tighter font-bold text-gray-800">{{ title }} </h1>
+      <div class="grid grid-cols-12 gap-5">
+        <div class="col-span-full lg:col-start-1 lg:col-end-10 pb-8 md:py-10">
+          <h1 class="text-4xl md:text-5xl md:leading-tight tracking-tighter font-bold text-gray-800">{{ title }}</h1>
 
-        <h2 class="my-10 md:my-16 text-xl font-lg lg:w-2/3 font-normal">{{ description }}</h2>
+          <h2 class="my-10 md:my-16 text-xl font-lg lg:w-2/3 font-normal">{{ description }}</h2>
 
-        <div class="text-sm flex flex-col space-y-10 md:space-y-0 md:flex-row md:justify-between md:items-center">
+          <div class="text-sm flex flex-col space-y-10 md:space-y-0 md:flex-row md:justify-between md:items-center">
+            <p class="pr-4">
+              <span class="text-xs uppercase font-bold text-gray-600 tracking-widest block">Services</span>
+              <span class="text-2xl font-bold tracking-tighter text-gray-800">{{ tasks }}</span>
+            </p>
 
-        <p class="pr-4">
-          <span class="text-xs uppercase font-bold text-gray-600 tracking-widest block">Services</span>
-          <span class="text-2xl font-bold tracking-tighter text-gray-800">{{ tasks }}</span>
-        </p>
+            <p>
+              <span class="text-xs uppercase font-bold text-gray-600 tracking-widest block">Year</span>
+              <span class="text-2xl font-bold tracking-tighter text-gray-800">{{ year }}</span>
+            </p>
 
-        <p>
-          <span class="text-xs uppercase font-bold text-gray-600 tracking-widest block">Year</span>
-          <span class="text-2xl font-bold tracking-tighter text-gray-800">{{ year }}</span>
-        </p>
+            {% if projectUrl %}
+              <a href="{{ projectUrl}}" title="{{ title }}" target="_blank" rel="noreferrer" class="text-purple-800 bg-purple-100 transition-colors hover:text-purple-100 hover:bg-purple-800 font-bold tracking-tight text-lg py-3 px-5 rounded-full inline-flex items-center justify-center">
+                <svg class="inline-block w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                View Live
+              </a>
+            {% endif %}
+          </div>
+        </div>
 
-        {% if projectUrl %}
-          <a href="{{ projectUrl}}" title="{{ title }}" target="_blank" rel="noreferrer" class="text-purple-800 bg-purple-100 transition-colors hover:text-purple-100 hover:bg-purple-800 font-bold tracking-tight text-lg py-3 px-5 rounded-full inline-flex items-center justify-center">
-            <svg class="inline-block w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-            View Live
-          </a>
-        {% endif %}
+        <div class="col-span-full">
+          {% if featuredImg %}
+            {% respimg featuredImg, title, 'w-full' %}
+          {% endif %}
         </div>
       </div>
-
-      <div class="col-span-full">
-        {% if featuredImg %}
-          {% respimg featuredImg, title, 'w-full' %}
-        {% endif %}
-      </div>
-    </div>
     {% endif %}
 
-    {% else %}
+  {% else %}
     {# for single page #}
     <div class="grid grid-cols-12 gap-5 mb-6">
       <div class="col-start-1 col-end-12 lg:col-end-8 pt-10">
@@ -49,5 +46,4 @@
       </div>
     </div>
   {% endif %}
-
 </section>
