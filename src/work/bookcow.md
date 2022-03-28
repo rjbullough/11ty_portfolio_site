@@ -34,8 +34,6 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-<div class="col-start-3 col-end-9">
-
   ### TL;DR
 
   The Book Cow is a small, independent book store located in one of Canberra’s oldest suburbs.
@@ -44,24 +42,19 @@ tags: ['works', 'ux', 'case study']
 
   {% pagebreak %}
 
-</div>
-
-
-<div class="col-start-3 col-end-9">
 
   ### Overview
+
 
   #### Team and duration
 
   This was a solo project. My role as a UX designer focused on business analysis, content strategy and UI design.
 
+
   #### Methods
 
   Competitive and comparative analysis, heuristic analysis, user research, user flow mapping, system mapping, prototyping and usability testing.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### “It just feels so clunky”
 
@@ -73,9 +66,6 @@ tags: ['works', 'ux', 'case study']
 
   <br>Further, product discovery is hampered by a lacklustre search experience, and the process of making a book purchase online is bogged down with too many steps — oftentimes unimportant to the customers making them.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Simple solutions
 
@@ -84,9 +74,6 @@ tags: ['works', 'ux', 'case study']
   2. Pairing pages with people by making product discovery easier and more powerful.
   3. Streamlining the purchasing process by removing unnecessary friction and adding accelerators for busier customers.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Invite early feedback
 
@@ -96,9 +83,6 @@ tags: ['works', 'ux', 'case study']
 
   <br>Discovering how different audiences refined their queries was enlightening, and lead to the inclusion (and exclusion) of attributes I may not have otherwise thought of.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Building trust
 
@@ -112,9 +96,6 @@ tags: ['works', 'ux', 'case study']
 
   Visitors are now informed of upcoming events, a place is given for the unique perspectives given by employees on recent releases, and children’s interests are prominently positioned — just as they are in store.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
 ### Find the right book, fast
 
@@ -132,11 +113,6 @@ tags: ['works', 'ux', 'case study']
     {% respimg 'bookcow--filters', "Proposed search filters", "zoomable" %}
   </div>
 
-
-
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Accelerate the checkout process
 
@@ -156,16 +132,11 @@ tags: ['works', 'ux', 'case study']
 
   {% pagebreak %}
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Final Thoughts
 
   Books are an interesting product. You’re very likely to get the same thing no matter where you buy it from, which leaves a store like The Book Cow with two ways to differentiate itself from the competition — price and experience.
 
   <br>By understanding customer needs and designing experiences to meet them, businesses such as the Book Cow can not only improve their bottom line, but further their engagement with the community they operate in.
-
-</div>
 
 </div>

@@ -34,8 +34,6 @@ tags: ['works', 'ux', 'case study']
 
 <div class="col-start-3 col-end-9">
 
-<div class="col-start-3 col-end-9">
-
   ### TL;DR
 
   ID Care help victims recover from scam attacks and identity theft. They have a wealth of knowledge on the topic, but it’s hard to find and isn’t presented in a cohesive manner.
@@ -47,12 +45,9 @@ tags: ['works', 'ux', 'case study']
 
   {% pagebreak %}
 
-</div>
-
-
-<div class="col-start-3 col-end-9">
 
   ### Overview
+
 
   #### The client
 
@@ -69,13 +64,11 @@ tags: ['works', 'ux', 'case study']
 
   This project was conducted by myself and one other student, both studying UX design. It took place over two weeks as part of our coursework whilst studying with General Assembly Australia.
 
+
   #### Methods
 
   Market analysis, user research, content strategy, information architecture analysis, wire-framing, prototyping and usability testing.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Identity security?
 
@@ -83,9 +76,6 @@ tags: ['works', 'ux', 'case study']
 
   <br>Our team didn’t fully understand the landscape that ID Care operated in, so our first port of call was to learn more about Identity security. In doing so, we could better design solutions that both met user expectations, and aligned with business goals.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### We’re in the response and recovery business
 
@@ -96,12 +86,9 @@ tags: ['works', 'ux', 'case study']
   <br>Searching through the website also allowed us to conduct a brief heuristic analysis, making the most of our time by killing two birds with one stone. There were some obvious quick wins that could be made with the way information was organised, and the language used when delivering it. By considering our audience’s mental models, we can more effectively deliver content that aligns with their way of processing information.
 
   <div class="my-10">
-  {% figure 'idcare--scambulance', "ID Care used strange words like 'scamulance' to describe their services", "ID Care didn't speak the same language as it's users, leading to things like the 'scambulance'." %}
+    {% figure 'idcare--scambulance', "ID Care used strange words like 'scamulance' to describe their services", "ID Care didn't speak the same language as it's users, leading to things like the 'scambulance'." %}
   </div>
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Targeted, vulnerable and without a care in the world
 
@@ -112,21 +99,18 @@ tags: ['works', 'ux', 'case study']
   <br>We designed a survey to discover the personal impact felt from identity theft scam attacks, participants level of knowledge around the various types of attacks used, and how well they felt they were doing about keeping their identities secured. Results were somewhat surprising — social media being the main source of education for the topic, and most people (over 70%) not feeling like they were doing enough to secure their identity online.
 
   <div class="my-10">
-  {% figure 'idcare--survey', "Pie graph displaying results of a survey", "Reasons for this figure included: lack of interest, time constraints, or the feeling that it’s just not a serious enough topic to worry about" %}
+    {% figure 'idcare--survey', "Pie graph displaying results of a survey", "Reasons for this figure included: lack of interest, time constraints, or the feeling that it’s just not a serious enough topic to worry about" %}
   </div>
 
   Armed with this knowledge, we conducted a series of user interviews to better understand those sentiments.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Changing minds, winning hearts
 
   The best user interviews are usually the result of careful planning, active listening and an enjoyable experience for the participant — nobody wants to feel like they’re being quizzed!
 
   <div class="my-10">
-  {% respimg 'idcare--affinity', "Affinity mapping post-it notes", "zoomable" %}
+    {% respimg 'idcare--affinity', "Affinity mapping post-it notes", "zoomable" %}
   </div>
 
   Throughout the process, we quickly saw a theme that our participants didn’t fully understand the potential implications as a result of identity theft or scam attacks.
@@ -134,9 +118,6 @@ tags: ['works', 'ux', 'case study']
 
   <br>With that in mind, our design solution started to become a little clearer.
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
 ### Now trending: scam advice
 
@@ -150,9 +131,6 @@ tags: ['works', 'ux', 'case study']
     {% figure 'idcare--sketch', "Early sketch of a twitter post", "A very early concept for a social media post" %}
   </div>
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### A place for everything, and everything in it's place
 
@@ -168,9 +146,6 @@ tags: ['works', 'ux', 'case study']
 
   {% pagebreak %}
 
-</div>
-
-<div class="col-start-3 col-end-9">
 
   ### Did it all work?
 
@@ -181,7 +156,3 @@ tags: ['works', 'ux', 'case study']
   <br>The important take-away is that feedback should drive the next round of change and iteration, each time further refining and coming closer to perfection.
 
 </div>
-
-</div>
-
-

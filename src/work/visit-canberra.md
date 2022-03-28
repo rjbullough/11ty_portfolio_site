@@ -13,28 +13,25 @@ date: 2021-10-01
 tags: ['works', 'web dev', 'vue', 'drupal']
 ---
 
-<div class="col-start-2 col-end-10">
+<div class="col-start-3 col-end-9">
 
-### The client
+  ### The client
 
-[Visit Canberra](http://visitcanberra.com.au/){.link} aims to grow the visitor economy for Canberra by highlighting events, attractions and local businesses to prospective tourists.
+  [Visit Canberra](http://visitcanberra.com.au/){.link} aims to grow the visitor economy for Canberra by highlighting events, attractions and local businesses to prospective tourists.
 
-### The challenge 👀
 
-Utilise modern web technology to integrate the [Australian Tourism Data Warehouse](https://atdw.com.au/){.link} and provide a canvas for content-creators to champion brand Canberra.<br>
-Visit Canberra is a SPA built using Vue.js, the front-end consuming data from a Drupal 9 back-end in a headless capacity.
+  ### The challenge 👀
 
-</div>
+  Utilise modern web technology to integrate the [Australian Tourism Data Warehouse](https://atdw.com.au/){.link} and provide a canvas for content-creators to champion brand Canberra.<br>
+  Visit Canberra is a SPA built using Vue.js, the front-end consuming data from a Drupal 9 back-end in a headless capacity.
 
-<div class="col-start-3 col-end-9 mt-12">
-{% figure 'visit-canberra--10Things', 'Major Canberra attractions', 'Visit Canberra utilises lists to promote discoverability' %}
-</div>
+  <div class="mt-12">
+    {% figure 'visit-canberra--10Things', 'Major Canberra attractions', 'Visit Canberra utilises lists to promote discoverability' %}
+  </div>
 
-<div class="col-start-2 col-end-10">
 
-### The result 👌
+  ### The result 👌
 
-The development process presented numerous hurdles which emphasised the importance of client communication.  Fortunately we were able to work toward the solution together - something that may not have happened if that communication had broken down.
+  The development process presented numerous hurdles which emphasised the importance of client communication.  Fortunately we were able to work toward the solution together - something that may not have happened if that communication had broken down.
 
 </div>
-

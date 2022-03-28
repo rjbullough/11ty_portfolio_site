@@ -15,27 +15,24 @@ tags: ['works', 'web dev', 'svelte', 'mailchimp']
 
 <div class="col-start-3 col-end-9">
 
-### The client
+  ### The client
 
-[4 Canberra](http://4canberra.com.au/){.link} aims reignite the local tourism economy post COVID-19 by cross-promoting four different attractions in the region.
+  [4 Canberra](http://4canberra.com.au/){.link} aims reignite the local tourism economy post COVID-19 by cross-promoting four different attractions in the region.
 
-### The challenge 👀
 
-Provide a simple way of distributing EDM to attraction visitors, encouraging them to visit all of the participating operators during the promotional period.
+  ### The challenge 👀
 
-I used Mailchimp to provide targeted material to visitors, highlighting attractions they hadn't yet visited amongst the group - all handled through a simple QR check-in code.
+  Provide a simple way of distributing EDM to attraction visitors, encouraging them to visit all of the participating operators during the promotional period.
 
-</div>
+  I used Mailchimp to provide targeted material to visitors, highlighting attractions they hadn't yet visited amongst the group - all handled through a simple QR check-in code.
 
-<div class="col-start-2 col-end-10 mt-12">
-{% figure '4canberra--attractions', 'Picture of the four participating tourism venues taking place in 4Canberra', 'The tourism operators taking part in the initiative' %}
-</div>
+  <div class="mt-12">
+    {% figure '4canberra--attractions', 'Picture of the four participating tourism venues taking place in 4Canberra', 'The tourism operators taking part in the initiative' %}
+  </div>
 
-<div class="col-start-3 col-end-9">
 
-### The result 👌
+  ### The result 👌
 
-A simple, scalable solution developed in an incredibly short timeframe.
+  A simple, scalable solution developed in an incredibly short timeframe.
 
 </div>
-
