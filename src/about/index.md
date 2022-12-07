@@ -28,13 +28,11 @@ Starry-eyed pragmatist.{.font-serif .py-8 .md:py-14 .text-4xl .md:text-7xl}
 
 <br>Ryan Bullough is an independent Australian UX Designer and Web Developer.
 
-<br>As a consultant, he works directly with organisations to build well-considered, functional products and design systems.
+<br>As a consultant, he works directly with organisations to build well-considered, cherished products.
 
-<br>He believes that the best designs are the simplest ones, and through his craft wants to improve our social landscape both digitally and physically.
+<br>He believes that the best designs are the simplest ones, and through his craft wants to make our digital lives just a little bit simpler.
 
 <br>When Ryan can successfully :q vim, he spends time with his Australian Shepherd, Texas.
-
-<br>Open to both design and frontend engineering roles - remote or on-location.{.monospace .font-bold}
 
 </div>
 
